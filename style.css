@@ -9,7 +9,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #fff;
+    background: #f5f5f5;
     color: #333333;
 
 }
@@ -379,16 +379,19 @@ nav .fas{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 865px){
     #header{
-        background-image: url(Images/background-phone.jpg);
+        background-image: url(Images/bg-white.jpg);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 80%;
         font-size: 16px;
     }
+    #sidemenu, #sidemenu li a{
+        color: #fff;
+    }
     .header-text h1{
-        font-size: 30px;
+        font-size: 35px;
     }
     nav .fas{
         display: block;
