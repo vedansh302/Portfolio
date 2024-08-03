@@ -384,7 +384,7 @@ nav .fas{
 
 @media only screen and (max-width: 865px){
     #header{
-        background-image: url(Images/bg-white.jpg);
+        background-image: url(Images/bg-white-phone.jpg);
     }
     .header-text{
         margin-top: 80%;
