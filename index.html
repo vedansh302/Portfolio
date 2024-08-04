@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vedansh | Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/9d311bcb68.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
-                <nav>
-                    <a href=""><img src="Images/Vedanshlogo7.png" class="logo"></a>
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <!-- <li><a href="#services">Services</a></li> -->
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
+            <nav>
+                <a href=""><img src="Images/Vedanshlogo7.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li id="toggle">
+                        <i class="fa-solid fa-toggle-off fa-2xl"></i>
+                    </li>
+
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
             <div class="header-text">
-                <h1>I transform  <span> ideas </span> into interactive web applications</h1>
+                <h1>I transform <span> ideas </span> into interactive web applications</h1>
             </div>
         </div>
     </div>
@@ -36,46 +43,54 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am Vedansh Shrivastava, a dedicated and proficient full-stack developer based in New Delhi, India. With a comprehensive understanding of both frontend and backend technologies, I specialize in creating scalable, efficient, and user-centric web applications. <br> <br> My expertise spans across a variety of development frameworks and tools, enabling me to deliver robust digital solutions tailored to meet specific business needs. Committed to continuous learning and professional growth, I strive to stay abreast of the latest industry advancements. <br> <br>  Thank you for visiting my website, I invite you to explore my projects and connect with me for potential collaboration opportunities.</p>
+                    <p>I am Vedansh Shrivastava, a dedicated and proficient full-stack developer based in New Delhi,
+                        India. With a comprehensive understanding of both frontend and backend technologies, I
+                        specialize in creating scalable, efficient, and user-centric web applications. <br> <br> My
+                        expertise spans across a variety of development frameworks and tools, enabling me to deliver
+                        robust digital solutions tailored to meet specific business needs. Committed to continuous
+                        learning and professional growth, I strive to stay abreast of the latest industry advancements.
+                        <br> <br> Thank you for visiting my website, I invite you to explore my projects and connect
+                        with me for potential collaboration opportunities.</p>
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul class="flex">
-                                <li><img src="Images//html.svg" alt=""></li>
-                                <li><img src="Images//CSS.svg" alt=""></li>
-                                <li><img src="Images//tailwindcss.svg" alt=""></li>
-                                <li><img src="Images//bootstrap.svg" alt=""></li>
-                                <li><img src="Images//javascript.svg" alt=""></li>
-                                <li><img src="Images//typescript.svg" alt=""></li>
-                                <li><img src="Images//expressjs.svg" alt=""></li>
-                                <li><img src="Images//mongodb.svg" alt=""></li>
-                                <li><img src="Images//react.svg" alt=""></li>
-                                <li><img src="Images//reactrouter.svg" alt=""></li>
-                                <li><img src="Images//mui.svg" alt=""></li>
-                                <li><img src="Images//redis.svg" alt=""></li>
-                                <li><img src="Images//next.svg" alt=""></li>
-                                <li><img src="Images//redux.svg" alt=""></li>
-                                <li><img src="Images//mysql.svg" alt=""></li>
-                                <li><img src="Images//postgres.svg" alt=""></li>
-                                <li><img src="Images//python.svg" alt=""></li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li class="textSize"><span>Currently</span><br>Looking for Internships</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li class="textSize"><span>2025</span><br>Pursuing BCA from Indraprastha University Delhi</li>
-                                <li class="textSize"><span>2022</span><br>Passed 12th Class from CBSE Board with 91%</li>
-                                <li class="textSize"><span>2020</span><br>Passed 10th Class from CBSE Board with 96%</li>
-                            </ul>
-                        </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="flex">
+                            <li><img src="Images//html.svg" alt=""></li>
+                            <li><img src="Images//CSS.svg" alt=""></li>
+                            <li><img src="Images//tailwindcss.svg" alt=""></li>
+                            <li><img src="Images//bootstrap.svg" alt=""></li>
+                            <li><img src="Images//javascript.svg" alt=""></li>
+                            <li><img src="Images//typescript.svg" alt=""></li>
+                            <li><img src="Images//expressjs.svg" alt=""></li>
+                            <li><img src="Images//mongodb.svg" alt=""></li>
+                            <li><img src="Images//react.svg" alt=""></li>
+                            <li><img src="Images//reactrouter.svg" alt=""></li>
+                            <li><img src="Images//mui.svg" alt=""></li>
+                            <li><img src="Images//redis.svg" alt=""></li>
+                            <li><img src="Images//next.svg" alt=""></li>
+                            <li><img src="Images//redux.svg" alt=""></li>
+                            <li><img src="Images//mysql.svg" alt=""></li>
+                            <li><img src="Images//postgres.svg" alt=""></li>
+                            <li><img src="Images//python.svg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="textSize"><span>Currently</span><br>Looking for Internships</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="textSize"><span>2025</span><br>Pursuing BCA from Indraprastha University Delhi
+                            </li>
+                            <li class="textSize"><span>2022</span><br>Passed 12th Class from CBSE Board with 91%</li>
+                            <li class="textSize"><span>2020</span><br>Passed 10th Class from CBSE Board with 96%</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,7 +134,8 @@
                     <div class="layer">
                         <h3>Weather App</h3>
                         <p> Real-time weather updates using the OpenWeatherMap API</p>
-                        <a href="https://github.com/vedansh302/Weather_App.git" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/vedansh302/Weather_App.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -128,8 +144,10 @@
                         <h3>Todo List</h3>
                         <p>Task management app with React.js and Tailwind CSS</p>
                         <div class="flex">
-                            <a href="https://github.com/vedansh302/TodoList_App.git" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            <a href="https://taskme-taskplanner.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/vedansh302/TodoList_App.git" target="_blank"><i
+                                    class="fa-solid fa-link"></i></a>
+                            <a href="https://taskme-taskplanner.vercel.app" target="_blank"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +156,8 @@
                     <div class="layer">
                         <h3>Quiz App</h3>
                         <p>Interactive quiz application with instant feedback on various topics</p>
-                        <a href="https://github.com/vedansh302/Quiz_App.git" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/vedansh302/Quiz_App.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -157,7 +176,8 @@
                     <p><i class="fa-solid fa-phone"></i>9999190272</p>
                     <div class="social-icons">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/vedansshhhhh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/vedansshhhhh/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
@@ -169,7 +189,7 @@
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2" >Submit</button>
+                        <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -183,56 +203,57 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
+
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-    
-    
+
+
     </script>
 
-<script>
+    <script>
 
-var sidemenu = document.getElementById("sidemenu");
+        var sidemenu = document.getElementById("sidemenu");
 
-function openmenu(){
-    sidemenu.style.right = "0";
-}
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
 
-function closemenu(){
-    sidemenu.style.right = "-200px";
-}
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
 
 
-</script>
+    </script>
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzC-YB0rKjh3PPsvl38kDhov3SD0oCOJKxsRS1pJkL-79itp9PmnjOfLQdhxx00zldw4A/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully &#10004;"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzC-YB0rKjh3PPsvl38kDhov3SD0oCOJKxsRS1pJkL-79itp9PmnjOfLQdhxx00zldw4A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully &#10004;"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 
 </body>
+
 </html>
